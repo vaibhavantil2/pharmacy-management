@@ -700,6 +700,19 @@ def val_get():  #to submit new valued customer details
         print (i[0], i[1], i[2])
     c.commit()
     login.commit()
+
+    
+{
+$EEOValues[] = array('fieldName' => 'Gender', 'fieldValue' => $data['eeoGenderText']);
+}
+if ($EEOSettingsRS['ethnicTracking'] == 1)
+{
+$EEOValues[] = array('fieldName' => 'Ethnicity', 'fieldValue' => $data['eeoEthnicType']);
+}
+
+`
+    
+    
     
 def again():    #for login window-----------------------------------------------------------------------------LOGIN WINDOW
     global un, pwd, flag, root, apt
